@@ -1,0 +1,287 @@
+K	r	S
+r&\'S
+8gsk_3HKow99iH3XK1pqFHDytWGdyb3FYn5Ii7TLjSB1b5hVlF7HpXiesz'AIzaSyBqUh_-JAcT8tHz_B6N9XYhDSGe71zXRCA
+8nitengrUnrLMf9NWwEyC7FtuxcHGwluYw0oExEbPoVEUlcNxB70wcUqUz"56024150-8dc7867564720972891c5969d
+HABABAH_STUDIO_SECURE_SALT_2026z"~/storage/downloads/Hababah_Studio
+Daily_Scripts
+Voiceovers
+Stock_Footagez
+channels_config.jsonz
+license.keyz
+topics_history.jsonT
+exist_ok
+en-US-AndrewNeuralz
+en-US-EmmaNeuralz
+en-GB-RyanNeural)
+uuid
+getnode
+path
+expanduser
+hashlib
+sha256
+encode
+	hexdigest
+upper)
+raw_node
+	path_salt
+combineds
+Hababah_core.py
+get_machine_idr"
+=============================================u%
+ HABABAH STUDIO: LICENSE REQUIRED
+-=============================================z
+Your Unique Machine ID: z'
+This software is unlicensed or copied.z2Please send the above Machine ID to Hababah Studioz(to purchase your activation license key.
+ CRITICAL ERROR: INVALID LICENSE KEYzCHardware mismatch detected! This license belongs to another device.z-Please contact Hababah Studio for assistance.)
+SECRET_SALTr
+exists
+LICENSE_FILE
+print
+exit
+open
+read
+strip)
+machine_id
+expected_key
+user_keys
+    r!
+verify_licenser4
+2-E;
+ FIRST TIME SETUP: HABABAH STUDIO]z-How many channels are you setting up? (1-3): z
+--- Channel 
+ Configuration ---z(Enter Channel Name (e.g., HababahPets): z)Enter Display Name (e.g., Hababah Pets): z
+Enter Niche for z
+display_name
+niche
+indentu(
+ Configuration Saved Successfully!])
+CONFIG_FILEr-
+json
+loadr+
+input
+range
+dump)
+num_channels
+config
+namer7
+       r!
+load_or_create_configrH
+O0[	
+Shortz
+ (Part 
+ (Episode 
+HISTORY_FILEr-
+lowerrC
+topic
+format_type
+historyr2
+clean_topic
+counts
+      r!
+get_topic_series_suffixrT
+S U	
+n	A	
+n	A	f
+)"Nu)
+ AI Writer] Drafting high-retention z
+ script...rJ
+z1Write a high-retention Short video script about 'z
+' for the channel 'aa
+'. CRITICAL RULES:
+1. The script length must be STRICTLY under 130 words total to easily fit within a 60-second running duration limit.
+2. Avoid tautology completely. Do not repeat facts, exact words, thoughts, or expressions across different sentences.
+3. End the script with a strong, urgent call to action asking the viewer to 'Like and Subscribe to z`'.
+4. Give ONLY the clean spoken text without any bracketed instructions, audio cues, or labels.z@Write an engaging, high-retention Long-form video script about 'av
+'. CRITICAL RULES:
+1. The script should be realistic, detailed, thoroughly descriptive, and extended in structural length.
+2. Avoid tautology completely. Do not repeat facts, exact words, thoughts, or expressions across different sentences. Keep descriptions progressive.
+3. You MUST end the script with a powerful call to action asking the viewer to 'Like and Subscribe to z
+', immediately followed by an engaging question directed at the viewers to spark active discussion and drive interaction in the comment section.
+4. Give ONLY the clean spoken text without any bracketed instructions, labels, or scene descriptors.
+/https://api.groq.com/openai/v1/chat/completions
+Bearer 
+application/json
+Authorization
+Content-Type
+llama-3.1-8b-instant
+user
+role
+content
+model
+messages
+headers
+timeout
+choicesr
+messager`
+zL -> Groq direct endpoint unavailable. Rerouting to Gemini direct endpoint...z]https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=r[
+contents
+parts
+text
+candidatesu$
+ Both AI direct links timed out: z<Error drafting your script content. Please check connection.)
+GROQ_API_KEY
+requests
+postr>
+	Exception
+GEMINI_API_KEY)
+channel_name
+prompt
+urlrf
+payload
+response
+          r!
+generate_viral_scriptrz
+NzoGive me exactly 5 separate search keywords for finding background stock video footage for the specific topic: 'z
+' matching a channel in the 'aJ
+' niche. RULES:
+1. Focus heavily on concrete nouns and descriptive actions directly inside the topic (e.g., if the topic mentions football history, output terms like 'football', 'trophy' rather than generic classroom clips).
+2. Output strictly as comma-separated terms on a single line. Do not use bullet points or numbered lists.rV
+	cinematic)
+split
+replace)	rO
+         r!
+extract_search_termsr
+ Voice Engine] Rendering speech...
++25%)
+rate)
+edge_tts
+Communicate
+save)
+voice_id
+	dest_path
+clean_text
+communicates
+     r!
+create_voiceoverr
+A%A/
+z+https://api.pexels.com/videos/search?query=z
+&orientation=z
+&per_page=
+videos
+video_filesr
+link)
+PEXELS_API_KEY
+urllib
+parse
+quotero
+getr>
+append)	
+query
+orientationrS
+urlsrf
+p_urlr'
+filess	
+         r!
+get_video_urlsr
+S"3	n
+)$NrJ
+portrait
+	landscaper
+isalnum
+  r!
+	<genexpr>
+-download_and_process_clips.<locals>.<genexpr>
+youtube subscribez
+like button animation
+ -> Found zB total matching clips. Running download and watermark pipelines...
+raw_z
+.mp4
+clip_r6
+zTscale=720:1280:force_original_aspect_ratio=decrease,pad=720:1280:(ow-iw)/2:(oh-ih)/2zTscale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2z
+drawtext=text='@zB':x=40:y=40:fontsize=32:fontcolor=white:alpha=0.5,drawtext=text='@z;':x=w-tw-40:y=h-th-50:fontsize=32:fontcolor=white:alpha=0.5)
+streamrg
+ffmpeg -y -i z
+ -vf "r|
+z." -c:v libx264 -preset ultrafast -crf 26 -an "r~
+shell
+stdout
+stderr)
+joinrN
+VIDEOS_DIR
+makedirs
+list
+extendr
+lenr+
+	enumeratero
+writer`
+subprocess
+DEVNULLr)
+remove)
+search_keywords
+	watermarkrP
+	max_clips
+safe_topic
+	topic_dir
+extended_keywords
+video_urls
+download_url
+temp_in
+	final_out
+base_scale
+	wm_filter
+v_filer2
+cmds
+                    r!
+download_and_process_clipsr
+S#R%
+)+Nr&
+z-      HABABAH STUDIO: COMMERCIAL V1          z@
+Select Global Voice Profile:
+1. US Male
+2. US Female
+3. UK Malez
+Option (1-3): r
+Available Channels:r6
+Select channel index: z
+Generating for r7
+...r:
+Short z
+/3 Topic: rJ
+title
+typer
+Long z
+/2 Topic: 
+Longz
+%Y-%m-%dr
+_scripts.txtr
+--- Processing: z
+ ---
+utf-8)
+encodingz
+--- z
+ ---
+  r!
+main.<locals>.<genexpr>5
+.mp3z= -> Performing precise keyword analysis for visual mapping...r8
+ -> Targeted Search Keywords: )
+VOICE_MAPPINGr
+keysr
+datetime
+strftimer
+SCRIPTS_DIRrT
+	AUDIO_DIRr
+voice_choicer
+channelsrF
+ch_idx
+channel_key
+ch_data
+topics
+date_str
+script_file
+item
+suffix
+full_title
+script_contentr2
+	safe_name
+dynamic_keywordss
+                   r!
+mainr
+1A;L
+__main__)
+random
+asyncioro
+urllib.parser
+PIXABAY_API_KEYr(
+BASE_DIRr
+__name__r
+<module>r
